@@ -2,7 +2,11 @@ import js from "@eslint/js";
 import eslintConfigPrettier from "eslint-config-prettier";
 import turboPlugin from "eslint-plugin-turbo";
 import tseslint from "typescript-eslint";
-import onlyWarn from "eslint-plugin-only-warn";
+import eslintPluginJsonc from "eslint-plugin-jsonc";
+import noSecrets from "eslint-plugin-no-secrets";
+import { unicornConfig } from "./rules/unicorn.js";
+import { debugConfig } from "./rules/debugging.js";
+import { javascriptConfig } from "./rules/javascript.js";
 
 /**
  * A shared ESLint configuration for the repository.
@@ -13,6 +17,8 @@ export const config = [
   js.configs.recommended,
   eslintConfigPrettier,
   ...tseslint.configs.recommended,
+  ...eslintPluginJsonc.configs["flat/recommended-with-jsonc"],
+  ...unicornConfig,
   {
     plugins: {
       turbo: turboPlugin,
@@ -22,11 +28,17 @@ export const config = [
     },
   },
   {
+    languageOptions: { ecmaVersion: 6 },
     plugins: {
-      onlyWarn,
+      "no-secrets": noSecrets,
+    },
+    rules: {
+      "no-secrets/no-secrets": "error",
     },
   },
   {
     ignores: ["dist/**"],
   },
+  ...debugConfig,
+  ...javascriptConfig,
 ];

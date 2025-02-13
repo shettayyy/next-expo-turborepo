@@ -7,6 +7,7 @@ import noSecrets from "eslint-plugin-no-secrets";
 import { unicornConfig } from "./rules/unicorn.js";
 import { debugConfig } from "./rules/debugging.js";
 import { javascriptConfig } from "./rules/javascript.js";
+import { importConfig } from "./rules/import.js";
 
 /**
  * A shared ESLint configuration for the repository.
@@ -41,4 +42,5 @@ export const config = [
   },
   ...debugConfig,
   ...javascriptConfig,
+  ...importConfig,
 ];

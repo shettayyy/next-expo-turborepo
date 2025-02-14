@@ -1,7 +1,8 @@
 import js from "@eslint/js";
+import pluginNext from "@next/eslint-plugin-next";
 import eslintConfigPrettier from "eslint-config-prettier";
 import tseslint from "typescript-eslint";
-import pluginNext from "@next/eslint-plugin-next";
+
 import { config as baseConfig } from "./base.js";
 import { config as reactInternalConfig } from "./react-internal.js";
 

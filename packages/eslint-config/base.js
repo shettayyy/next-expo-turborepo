@@ -1,13 +1,14 @@
 import js from "@eslint/js";
 import eslintConfigPrettier from "eslint-config-prettier";
-import turboPlugin from "eslint-plugin-turbo";
-import tseslint from "typescript-eslint";
 import eslintPluginJsonc from "eslint-plugin-jsonc";
 import noSecrets from "eslint-plugin-no-secrets";
-import { unicornConfig } from "./rules/unicorn.js";
+import turboPlugin from "eslint-plugin-turbo";
+
 import { debugConfig } from "./rules/debugging.js";
-import { javascriptConfig } from "./rules/javascript.js";
 import { importConfig } from "./rules/import.js";
+import { javascriptConfig } from "./rules/javascript.js";
+import { typescriptConfig } from "./rules/typescript.js";
+import { unicornConfig } from "./rules/unicorn.js";
 
 /**
  * A shared ESLint configuration for the repository.
@@ -17,8 +18,8 @@ import { importConfig } from "./rules/import.js";
 export const config = [
   js.configs.recommended,
   eslintConfigPrettier,
-  ...tseslint.configs.recommended,
   ...eslintPluginJsonc.configs["flat/recommended-with-jsonc"],
+  ...typescriptConfig,
   ...unicornConfig,
   {
     plugins: {

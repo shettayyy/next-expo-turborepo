@@ -5,9 +5,7 @@ import noSecrets from "eslint-plugin-no-secrets";
 import turboPlugin from "eslint-plugin-turbo";
 
 import { debugConfig } from "./rules/debugging.js";
-import { importConfig } from "./rules/import.js";
 import { javascriptConfig } from "./rules/javascript.js";
-import { typescriptConfig } from "./rules/typescript.js";
 import { unicornConfig } from "./rules/unicorn.js";
 
 /**
@@ -39,8 +37,6 @@ export const config = [
   {
     ignores: ["dist/**"],
   },
-  ...typescriptConfig,
   ...debugConfig,
   ...javascriptConfig,
-  ...importConfig,
 ];

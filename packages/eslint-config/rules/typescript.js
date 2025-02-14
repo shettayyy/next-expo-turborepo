@@ -1,3 +1,6 @@
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
 import { config, configs } from "typescript-eslint";
 
 /**
@@ -15,7 +18,7 @@ export const typescriptConfig = config(
           "../../../apps/*/tsconfig.json",
           "../../../packages/*/tsconfig.json",
         ],
-        tsconfigRootDir: import.meta.dirname,
+        tsconfigRootDir: path.dirname(fileURLToPath(import.meta.url)),
       },
     },
     rules: {

@@ -1,13 +1,13 @@
-import tseslint from "typescript-eslint";
+import { config, configs } from "typescript-eslint";
 
 /**
  * A shared ESLint configuration for the TypeScript ecosystem.
  *
  * @type {import("eslint").Linter.Config}
  * */
-export const typescriptConfig = tseslint.config(
-  tseslint.configs.recommendedTypeChecked,
-  tseslint.configs.stylisticTypeChecked,
+export const typescriptConfig = config(
+  configs.recommendedTypeChecked,
+  configs.stylisticTypeChecked,
   {
     languageOptions: {
       parserOptions: {
@@ -179,7 +179,7 @@ export const typescriptConfig = tseslint.config(
   },
   {
     files: ["**/*.js", "**/*.jsx", "**/*.json"],
-    extends: [tseslint.configs.disableTypeChecked],
+    extends: [configs.disableTypeChecked],
     rules: {
       "@typescript-eslint/no-unused-expressions": "off",
     },

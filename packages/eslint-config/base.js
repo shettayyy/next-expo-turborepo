@@ -1,5 +1,6 @@
 import js from "@eslint/js";
 import eslintConfigPrettier from "eslint-config-prettier";
+import jsdoc from "eslint-plugin-jsdoc";
 import eslintPluginJsonc from "eslint-plugin-jsonc";
 import noSecrets from "eslint-plugin-no-secrets";
 import turboPlugin from "eslint-plugin-turbo";
@@ -16,6 +17,7 @@ import { unicornConfig } from "./rules/unicorn.js";
 export const config = [
   js.configs.recommended,
   eslintConfigPrettier,
+  jsdoc.configs["flat/recommended-typescript"],
   ...eslintPluginJsonc.configs["flat/recommended-with-jsonc"],
   ...unicornConfig,
   {

@@ -60,3 +60,7 @@ This Turborepo has some additional tools already setup for you:
 ### ESLint
 
 You would have refresh (CMD+R) whenever you make changes to the ESLint configuration.
+
+### TODO
+
+- TODO: Assign the markdown url to help with commit messages to `helpUrl` under `commitlint.config.js`

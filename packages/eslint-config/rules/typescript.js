@@ -11,7 +11,10 @@ export const typescriptConfig = config(
   {
     languageOptions: {
       parserOptions: {
-        project: ["../../../apps/*/tsconfig.json"],
+        project: [
+          "../../../apps/*/tsconfig.json",
+          "../../../packages/*/tsconfig.json",
+        ],
         tsconfigRootDir: import.meta.dirname,
       },
     },

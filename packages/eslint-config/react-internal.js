@@ -17,6 +17,7 @@ export const config = [
       globals: {
         ...globals.serviceworker,
         ...globals.browser,
+        ...globals.jest,
       },
     },
   },

@@ -7,7 +7,7 @@ import { Text as DefaultText, View as DefaultView } from "react-native";
 
 import Colors from "@/constants/colors";
 
-import { useColorScheme } from "./useColorScheme";
+import { useColorScheme } from "./use-color-scheme";
 
 interface IThemeProperties {
   lightColor?: string;

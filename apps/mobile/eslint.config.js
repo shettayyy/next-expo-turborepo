@@ -2,6 +2,11 @@
 import { config as reactConfig } from "@edenomics/eslint-config/react-internal";
 
 /** @type {import("eslint").Linter.Config} */
-const expoConfig = [...reactConfig];
+const expoConfig = [
+  ...reactConfig,
+  {
+    ignores: [".expo", ".expo-shared"],
+  },
+];
 
 export default expoConfig;

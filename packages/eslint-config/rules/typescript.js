@@ -1,4 +1,3 @@
-import eslint from "@eslint/js";
 import tseslint from "typescript-eslint";
 
 /**
@@ -7,13 +6,13 @@ import tseslint from "typescript-eslint";
  * @type {import("eslint").Linter.Config}
  * */
 export const typescriptConfig = tseslint.config(
-  eslint.configs.recommended,
   tseslint.configs.recommendedTypeChecked,
   tseslint.configs.stylisticTypeChecked,
   {
     languageOptions: {
       parserOptions: {
         project: ["../../../apps/*/tsconfig.json"],
+        tsconfigRootDir: import.meta.dirname,
       },
     },
     rules: {

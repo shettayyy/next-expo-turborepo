@@ -19,7 +19,6 @@ export const config = [
   js.configs.recommended,
   eslintConfigPrettier,
   ...eslintPluginJsonc.configs["flat/recommended-with-jsonc"],
-  ...typescriptConfig,
   ...unicornConfig,
   {
     plugins: {
@@ -30,7 +29,6 @@ export const config = [
     },
   },
   {
-    languageOptions: { ecmaVersion: 6 },
     plugins: {
       "no-secrets": noSecrets,
     },
@@ -41,6 +39,7 @@ export const config = [
   {
     ignores: ["dist/**"],
   },
+  ...typescriptConfig,
   ...debugConfig,
   ...javascriptConfig,
   ...importConfig,

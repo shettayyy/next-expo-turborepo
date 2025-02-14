@@ -11,6 +11,8 @@ export const unicornConfig = [
     rules: {
       "unicorn/no-unused-properties": "error",
       "unicorn/better-regex": "error",
+      "unicorn/prevent-abbreviations": "off",
+      "unicorn/no-null": "off",
     },
   },
 ];

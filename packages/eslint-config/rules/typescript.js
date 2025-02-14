@@ -63,13 +63,6 @@ export const typescriptConfig = config(
           format: ["camelCase"],
         },
 
-        // Class properties must be in camelCase
-        {
-          selector: "property",
-          format: ["camelCase"],
-          leadingUnderscore: "allow",
-        },
-
         // Parameters must be in camelCase
         {
           selector: "parameter",
@@ -137,7 +130,7 @@ export const typescriptConfig = config(
 
         // Boolean variables should start with is/has/should/can/will
         {
-          selector: ["variable", "parameter", "property"],
+          selector: ["variable"],
           types: ["boolean"],
           format: ["PascalCase"],
           prefix: ["is", "has", "should", "can", "will", "was", "does"],
@@ -145,7 +138,7 @@ export const typescriptConfig = config(
 
         // Event handlers should start with handle or on
         {
-          selector: ["function", "method", "property"],
+          selector: ["function", "method"],
           filter: {
             regex: "^(handle|on)[A-Z]",
             match: true,

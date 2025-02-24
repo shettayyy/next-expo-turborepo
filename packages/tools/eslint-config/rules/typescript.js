@@ -15,8 +15,8 @@ export const typescriptConfig = config(
     languageOptions: {
       parserOptions: {
         project: [
-          "../../../apps/*/tsconfig.json",
-          "../../../packages/*/tsconfig.json",
+          "../../../../apps/*/tsconfig.json",
+          "../../../../packages/*/tsconfig.json",
         ],
         tsconfigRootDir: path.dirname(fileURLToPath(import.meta.url)),
       },

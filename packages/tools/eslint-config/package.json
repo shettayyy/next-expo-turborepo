@@ -1,5 +1,5 @@
 {
-  "name": "@edenomics/eslint-config",
+  "name": "@edenomics-tools/eslint-config",
   "version": "0.0.0",
   "type": "module",
   "private": true,

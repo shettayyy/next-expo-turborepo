@@ -29,9 +29,6 @@ importers:
 
   apps/mobile:
     dependencies:
-      '@edenomics/eslint-config':
-        specifier: workspace:*
-        version: link:../../packages/eslint-config
       '@expo/vector-icons':
         specifier: ^14.0.2
         version: 14.0.4
@@ -87,6 +84,9 @@ importers:
       '@babel/core':
         specifier: ^7.25.2
         version: 7.26.7
+      '@edenomics-tools/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages/tools/eslint-config
       '@types/react':
         specifier: ~18.3.12
         version: 18.3.18
@@ -124,15 +124,15 @@ importers:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
     devDependencies:
-      '@edenomics/eslint-config':
+      '@edenomics-tools/eslint-config':
         specifier: workspace:*
-        version: link:../../packages/eslint-config
-      '@edenomics/tailwind-config':
+        version: link:../../packages/tools/eslint-config
+      '@edenomics-tools/tailwind-config':
         specifier: workspace:*
-        version: link:../../packages/tailwind-config
-      '@edenomics/typescript-config':
+        version: link:../../packages/tools/tailwind-config
+      '@edenomics-tools/typescript-config':
         specifier: workspace:*
-        version: link:../../packages/typescript-config
+        version: link:../../packages/tools/typescript-config
       '@next/eslint-plugin-next':
         specifier: ^15.1.6
         version: 15.1.6
@@ -161,7 +161,7 @@ importers:
         specifier: 5.7.3
         version: 5.7.3
 
-  packages/eslint-config:
+  packages/tools/eslint-config:
     devDependencies:
       '@eslint/js':
         specifier: ^9.20.0
@@ -212,16 +212,16 @@ importers:
         specifier: ^8.23.0
         version: 8.23.0(eslint@9.20.1)(typescript@5.7.3)
 
-  packages/tailwind-config:
+  packages/tools/tailwind-config:
     devDependencies:
-      '@edenomics/typescript-config':
+      '@edenomics-tools/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       tailwindcss:
         specifier: ^3.4.17
         version: 3.4.17
 
-  packages/typescript-config: {}
+  packages/tools/typescript-config: {}
 
   packages/ui:
     dependencies:
@@ -229,15 +229,15 @@ importers:
         specifier: ^19
         version: 19.0.0
     devDependencies:
-      '@edenomics/eslint-config':
+      '@edenomics-tools/eslint-config':
         specifier: workspace:*
-        version: link:../eslint-config
-      '@edenomics/tailwind-config':
+        version: link:../tools/eslint-config
+      '@edenomics-tools/tailwind-config':
         specifier: workspace:*
-        version: link:../tailwind-config
-      '@edenomics/typescript-config':
+        version: link:../tools/tailwind-config
+      '@edenomics-tools/typescript-config':
         specifier: workspace:*
-        version: link:../typescript-config
+        version: link:../tools/typescript-config
       '@types/react':
         specifier: ^19.0.7
         version: 19.0.8
@@ -5507,9 +5507,9 @@ packages:
       '@typescript-eslint/eslint-plugin': 8.23.0(@typescript-eslint/parser@8.23.0)(eslint@9.20.1)(typescript@5.3.3)
       '@typescript-eslint/parser': 8.23.0(eslint@9.20.1)(typescript@5.3.3)
       eslint: 9.20.1
-      eslint-import-resolver-typescript: 3.7.0(eslint-plugin-import@2.31.0)(eslint@9.20.1)
+      eslint-import-resolver-typescript: 3.8.0(eslint-plugin-import@2.31.0)(eslint@9.20.1)
       eslint-plugin-expo: 0.1.0(eslint@9.20.1)(typescript@5.3.3)
-      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.23.0)(eslint-import-resolver-typescript@3.7.0)(eslint@9.20.1)
+      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.23.0)(eslint-import-resolver-typescript@3.8.0)(eslint@9.20.1)
       eslint-plugin-react: 7.37.4(eslint@9.20.1)
       eslint-plugin-react-hooks: 4.6.2(eslint@9.20.1)
     transitivePeerDependencies:
@@ -5534,33 +5534,6 @@ packages:
       debug: 3.2.7
       is-core-module: 2.16.1
       resolve: 1.22.10
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
-  /eslint-import-resolver-typescript@3.7.0(eslint-plugin-import@2.31.0)(eslint@9.20.1):
-    resolution: {integrity: sha512-Vrwyi8HHxY97K5ebydMtffsWAn1SCR9eol49eCd5fJS4O1WV7PaAjbcjmbfJJSMz/t4Mal212Uz/fQZrOB8mow==}
-    engines: {node: ^14.18.0 || >=16.0.0}
-    peerDependencies:
-      eslint: '*'
-      eslint-plugin-import: '*'
-      eslint-plugin-import-x: '*'
-    peerDependenciesMeta:
-      eslint-plugin-import:
-        optional: true
-      eslint-plugin-import-x:
-        optional: true
-    dependencies:
-      '@nolyfill/is-core-module': 1.0.39
-      debug: 4.4.0
-      enhanced-resolve: 5.18.1
-      eslint: 9.20.1
-      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.23.0)(eslint-import-resolver-typescript@3.7.0)(eslint@9.20.1)
-      fast-glob: 3.3.3
-      get-tsconfig: 4.10.0
-      is-bun-module: 1.3.0
-      is-glob: 4.0.3
-      stable-hash: 0.0.4
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -5591,6 +5564,32 @@ packages:
       - supports-color
     dev: true
 
+  /eslint-import-resolver-typescript@3.8.0(eslint-plugin-import@2.31.0)(eslint@9.20.1):
+    resolution: {integrity: sha512-fItUrP/+xwpavWgadrn6lsvcMe80s08xIVFXkUXvhR4cZD2ga96kRF/z/iFGDI7ZDnvtlaZ0wGic7Tw+DhgVnA==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    peerDependencies:
+      eslint: '*'
+      eslint-plugin-import: '*'
+      eslint-plugin-import-x: '*'
+    peerDependenciesMeta:
+      eslint-plugin-import:
+        optional: true
+      eslint-plugin-import-x:
+        optional: true
+    dependencies:
+      '@nolyfill/is-core-module': 1.0.39
+      debug: 4.4.0
+      enhanced-resolve: 5.18.1
+      eslint: 9.20.1
+      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.23.0)(eslint-import-resolver-typescript@3.8.0)(eslint@9.20.1)
+      get-tsconfig: 4.10.0
+      is-bun-module: 1.3.0
+      stable-hash: 0.0.4
+      tinyglobby: 0.2.10
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /eslint-json-compat-utils@0.2.1(eslint@9.20.1)(jsonc-eslint-parser@2.4.0):
     resolution: {integrity: sha512-YzEodbDyW8DX8bImKhAcCeu/L31Dd/70Bidx2Qex9OFUtgzXLqtfWL4Hr5fM/aCCB8QUZLuJur0S9k6UfgFkfg==}
     engines: {node: '>=12'}
@@ -5607,7 +5606,7 @@ packages:
       jsonc-eslint-parser: 2.4.0
     dev: true
 
-  /eslint-module-utils@2.12.0(@typescript-eslint/parser@8.23.0)(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.7.0)(eslint@9.20.1):
+  /eslint-module-utils@2.12.0(@typescript-eslint/parser@8.23.0)(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.8.0)(eslint@9.20.1):
     resolution: {integrity: sha512-wALZ0HFoytlyh/1+4wuZ9FJCD/leWHQzzrxJ8+rebyReSLk7LApMyd3WJaLVoN+D5+WIdJyDK1c6JnE65V4Zyg==}
     engines: {node: '>=4'}
     peerDependencies:
@@ -5632,7 +5631,7 @@ packages:
       debug: 3.2.7
       eslint: 9.20.1
       eslint-import-resolver-node: 0.3.9
-      eslint-import-resolver-typescript: 3.7.0(eslint-plugin-import@2.31.0)(eslint@9.20.1)
+      eslint-import-resolver-typescript: 3.8.0(eslint-plugin-import@2.31.0)(eslint@9.20.1)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -5676,7 +5675,7 @@ packages:
       - typescript
     dev: true
 
-  /eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.23.0)(eslint-import-resolver-typescript@3.7.0)(eslint@9.20.1):
+  /eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.23.0)(eslint-import-resolver-typescript@3.8.0)(eslint@9.20.1):
     resolution: {integrity: sha512-ixmkI62Rbc2/w8Vfxyh1jQRTdRTF52VxwRVHl/ykPAmqG+Nb7/kNn+byLP0LxPgI7zWA16Jt82SybJInmMia3A==}
     engines: {node: '>=4'}
     peerDependencies:
@@ -5696,7 +5695,7 @@ packages:
       doctrine: 2.1.0
       eslint: 9.20.1
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.12.0(@typescript-eslint/parser@8.23.0)(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.7.0)(eslint@9.20.1)
+      eslint-module-utils: 2.12.0(@typescript-eslint/parser@8.23.0)(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.8.0)(eslint@9.20.1)
       hasown: 2.0.2
       is-core-module: 2.16.1
       is-glob: 4.0.3
@@ -9879,6 +9878,7 @@ packages:
 
   /resolve@2.0.0-next.5:
     resolution: {integrity: sha512-U7WjGVG9sH8tvjW5SmGbQuui75FiyjAX72HX15DwBBwF9dNiQZRQAg9nnPhYy+TUnE0+VcrttuvNI8oSxZcocA==}
+    hasBin: true
     dependencies:
       is-core-module: 2.16.1
       path-parse: 1.0.7

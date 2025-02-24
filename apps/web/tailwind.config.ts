@@ -1,6 +1,6 @@
 // tailwind config is required for editor support
 
-import sharedConfig from "@edenomics/tailwind-config";
+import sharedConfig from "@edenomics-tools/tailwind-config";
 import type { Config } from "tailwindcss";
 
 const config: Pick<Config, "content" | "presets"> = {

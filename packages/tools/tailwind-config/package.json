@@ -1,12 +1,12 @@
 {
-  "name": "@edenomics/tailwind-config",
+  "name": "@edenomics-tools/tailwind-config",
   "version": "0.0.0",
   "private": true,
   "exports": {
     ".": "./tailwind.config.ts"
   },
   "devDependencies": {
-    "@edenomics/typescript-config": "workspace:*",
+    "@edenomics-tools/typescript-config": "workspace:*",
     "tailwindcss": "^3.4.17"
   }
 }

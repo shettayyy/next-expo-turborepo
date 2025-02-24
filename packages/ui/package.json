@@ -23,9 +23,9 @@
     "react": "^19"
   },
   "devDependencies": {
-    "@edenomics/eslint-config": "workspace:*",
-    "@edenomics/tailwind-config": "workspace:*",
-    "@edenomics/typescript-config": "workspace:*",
+    "@edenomics-tools/eslint-config": "workspace:*",
+    "@edenomics-tools/tailwind-config": "workspace:*",
+    "@edenomics-tools/typescript-config": "workspace:*",
     "@types/react": "^19.0.7",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.20.1",

@@ -17,9 +17,9 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@edenomics/eslint-config": "workspace:*",
-    "@edenomics/tailwind-config": "workspace:*",
-    "@edenomics/typescript-config": "workspace:*",
+    "@edenomics-tools/eslint-config": "workspace:*",
+    "@edenomics-tools/tailwind-config": "workspace:*",
+    "@edenomics-tools/typescript-config": "workspace:*",
     "@next/eslint-plugin-next": "^15.1.6",
     "@types/node": "^22.12.0",
     "@types/react": "^19.0.7",

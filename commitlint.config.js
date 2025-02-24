@@ -28,6 +28,7 @@ export default {
         "dep",
         "config",
         "expo",
+        "next",
         "type",
         "util",
         "navigation",

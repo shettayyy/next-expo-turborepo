@@ -1,6 +1,6 @@
 const CASE = "lower-case";
 
-module.exports = {
+export default {
   extends: ["@commitlint/config-conventional"],
   rules: {
     "type-enum": [

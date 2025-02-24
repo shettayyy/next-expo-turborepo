@@ -1,6 +1,7 @@
 {
   "name": "edenomics",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "turbo build",
     "dev": "turbo run dev",

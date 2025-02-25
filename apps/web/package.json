@@ -11,9 +11,25 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
+    "@edenomics/constants": "workspace:*",
+    "@edenomics/contexts": "workspace:*",
+    "@edenomics/i18n": "workspace:*",
+    "@edenomics/stores": "workspace:*",
+    "@edenomics/types": "workspace:*",
+    "@radix-ui/react-dialog": "^1.1.6",
+    "@radix-ui/react-select": "^2.1.6",
+    "@radix-ui/react-slot": "^1.1.2",
+    "@sentry/nextjs": "^9",
+    "class-glue": "^1.14.3",
+    "class-variance-authority": "^0.7.1",
+    "lucide-react": "^0.475.0",
     "next": "^15.1.6",
+    "next-intl": "^3.26.5",
+    "next-themes": "^0.4.4",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.0.2",
+    "vaul": "^1.1.2"
   },
   "devDependencies": {
     "@edenomics-tools/eslint-config": "workspace:*",
@@ -21,7 +37,6 @@
     "@edenomics-tools/typescript-config": "workspace:*",
     "@next/eslint-plugin-next": "^15.1.6",
     "@types/node": "^22.12.0",
-    "@types/react": "^19.0.7",
     "@types/react-dom": "^19.0.3",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.20.1",

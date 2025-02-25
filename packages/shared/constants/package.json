@@ -1,0 +1,26 @@
+{
+  "name": "@edenomics/constants",
+  "version": "1.0.0",
+  "description": "Shared constants used across the application",
+  "type": "module",
+  "exports": {
+    "./app": "./src/app.ts"
+  },
+  "scripts": {
+    "lint": "eslint src --max-warnings 0",
+    "check-types": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@edenomics-tools/eslint-config": "workspace:*",
+    "@edenomics-tools/typescript-config": "workspace:*",
+    "eslint": "^9.20.1",
+    "typescript": "5.7.3"
+  },
+  "keywords": [
+    "edenomics",
+    "constants"
+  ],
+  "author": "Rahul Shetty",
+  "license": "UNLICENSED",
+  "private": true
+}

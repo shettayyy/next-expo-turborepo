@@ -5,7 +5,10 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "paths": {
+      "@web/libs/*": ["./libs/*"]
+    }
   },
   "include": [
     "**/*.ts",

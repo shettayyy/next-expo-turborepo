@@ -1,7 +1,9 @@
 {
   "eslint.workingDirectories": [
     { "pattern": "./packages/*/" },
-    { "pattern": "./apps/*/" }
+    { "pattern": "./apps/*/" },
+    { "pattern": "./packages/tools/*/" },
+    { "pattern": "./packages/shared/*/" }
   ],
   "i18n-ally.localesPaths": ["packages/shared/i18n/translations"],
   "i18n-ally.keystyle": "nested",

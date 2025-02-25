@@ -4,6 +4,7 @@
   "type": "module",
   "private": true,
   "exports": {
+    "./base-ts": "./base-ts.js",
     "./base": "./base.js",
     "./next-js": "./next.js",
     "./expo": "./expo.js",

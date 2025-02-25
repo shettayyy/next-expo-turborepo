@@ -17,6 +17,8 @@ export const typescriptConfig = config(
         project: [
           "../../../../apps/*/tsconfig.json",
           "../../../../packages/*/tsconfig.json",
+          "../../../shared/*/tsconfig.json",
+          "../../../tools/*/tsconfig.json",
         ],
         tsconfigRootDir: path.dirname(fileURLToPath(import.meta.url)),
       },
@@ -67,13 +69,6 @@ export const typescriptConfig = config(
         {
           selector: "method",
           format: ["camelCase"],
-        },
-
-        // Parameters must be in camelCase
-        {
-          selector: "parameter",
-          format: ["camelCase"],
-          leadingUnderscore: "allow",
         },
 
         // Interface names must start with 'I'
@@ -140,38 +135,6 @@ export const typescriptConfig = config(
           types: ["boolean"],
           format: ["PascalCase"],
           prefix: ["is", "has", "should", "can", "will", "was", "does"],
-        },
-
-        // Event handlers should start with handle or on
-        {
-          selector: ["function", "method"],
-          filter: {
-            regex: "^(handle|on)[A-Z]",
-            match: true,
-          },
-          format: ["camelCase"],
-        },
-
-        // Class names (including React components)
-        {
-          selector: "class",
-          format: ["PascalCase"],
-        },
-
-        // Async methods should end with Async
-        {
-          selector: ["function", "method"],
-          modifiers: ["async"],
-          format: ["camelCase"],
-          suffix: ["Async"],
-        },
-        {
-          selector: "function",
-          filter: {
-            regex: "^use[A-Z]",
-            match: true,
-          },
-          format: ["camelCase"],
         },
       ],
     },

@@ -1,0 +1,30 @@
+{
+  "name": "@edenomics/contexts",
+  "version": "1.0.0",
+  "description": "Shared contexts used across the application",
+  "type": "module",
+  "exports": {
+    "./user-agent": "./src/user-agent/user-agent.ts"
+  },
+  "scripts": {
+    "lint": "eslint src --max-warnings 0",
+    "check-types": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@edenomics/stores": "workspace:*"
+  },
+  "devDependencies": {
+    "@edenomics-tools/eslint-config": "workspace:*",
+    "@edenomics-tools/typescript-config": "workspace:*",
+    "@types/react": "^19.0.10",
+    "eslint": "^9.20.1",
+    "typescript": "5.7.3"
+  },
+  "keywords": [
+    "edenomics",
+    "contexts"
+  ],
+  "author": "Rahul Shetty",
+  "license": "UNLICENSED",
+  "private": true
+}

@@ -1,5 +1,5 @@
-import { FC, HTMLAttributes } from 'react';
-import { twMerge } from 'tailwind-merge';
+import { FC, HTMLAttributes } from "react";
+import { twMerge } from "tailwind-merge";
 
 export const TextOne: FC<HTMLAttributes<HTMLHeadingElement>> = ({
   children,
@@ -9,7 +9,7 @@ export const TextOne: FC<HTMLAttributes<HTMLHeadingElement>> = ({
   return (
     <p
       className={twMerge(
-        'font-[family-name:var(--font-avenir-heavy)] text-base',
+        "font-[family-name:var(--font-avenir-heavy)] text-base",
         className,
       )}
       {...props}

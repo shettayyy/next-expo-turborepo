@@ -1,5 +1,5 @@
-import { FC, HTMLAttributes } from 'react';
-import { twMerge } from 'tailwind-merge';
+import { FC, HTMLAttributes } from "react";
+import { twMerge } from "tailwind-merge";
 
 export const TextThreeSubtitle: FC<HTMLAttributes<HTMLHeadingElement>> = ({
   children,
@@ -9,7 +9,7 @@ export const TextThreeSubtitle: FC<HTMLAttributes<HTMLHeadingElement>> = ({
   return (
     <span
       className={twMerge(
-        'text-stone-501 font-[family-name:var(--font-avenir-medium)] text-xs',
+        "text-stone-501 font-[family-name:var(--font-avenir-medium)] text-xs",
         className,
       )}
       {...props}

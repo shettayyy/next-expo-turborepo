@@ -1,5 +1,5 @@
-import { FC, HTMLAttributes } from 'react';
-import { twMerge } from 'tailwind-merge';
+import { FC, HTMLAttributes } from "react";
+import { twMerge } from "tailwind-merge";
 
 export const H4: FC<HTMLAttributes<HTMLHeadingElement>> = ({
   children,
@@ -9,7 +9,7 @@ export const H4: FC<HTMLAttributes<HTMLHeadingElement>> = ({
   return (
     <h4
       className={twMerge(
-        'font-[family-name:var(--font-avenir-heavy)] text-2xl',
+        "font-[family-name:var(--font-avenir-heavy)] text-2xl",
         className,
       )}
       {...props}

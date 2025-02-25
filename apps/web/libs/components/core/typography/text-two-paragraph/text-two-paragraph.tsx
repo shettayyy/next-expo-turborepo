@@ -1,5 +1,5 @@
-import { FC, HTMLAttributes } from 'react';
-import { twMerge } from 'tailwind-merge';
+import { FC, HTMLAttributes } from "react";
+import { twMerge } from "tailwind-merge";
 
 export const TextTwoParagraph: FC<HTMLAttributes<HTMLHeadingElement>> = ({
   children,
@@ -9,7 +9,7 @@ export const TextTwoParagraph: FC<HTMLAttributes<HTMLHeadingElement>> = ({
   return (
     <p
       className={twMerge(
-        'text-stone-501 font-[family-name:var(--font-avenir-medium)] text-sm/[24px]',
+        "text-stone-501 font-[family-name:var(--font-avenir-medium)] text-sm/[24px]",
         className,
       )}
       {...props}

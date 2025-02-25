@@ -11,7 +11,7 @@ import {
 import { setUserLocaleAsync } from "@web/libs/utils/i18n/locale-actions";
 import { useTransition } from "react";
 
-import { TextOneLine } from "../../core/typography";
+import { Typography } from "../../core/typography/typography";
 
 interface Props {
   defaultValue: string;
@@ -53,7 +53,7 @@ export default function LocaleSwitcherSelect({
             value={item.value}
             className="flex items-center gap-2 py-2"
           >
-            <TextOneLine>{item.label}</TextOneLine>
+            <Typography>{item.label}</Typography>
           </SelectItem>
         ))}
       </SelectContent>

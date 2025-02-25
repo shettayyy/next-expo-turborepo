@@ -9,10 +9,6 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@web/libs/components/core/dialog/dialog";
-import {
-  TextOneSecondary,
-  TextTwoLine,
-} from "@web/libs/components/core/typography";
 import { usePWAInstallPrompt } from "@web/libs/hooks/pwa-install-prompt/pwa-install-prompt";
 import { ExternalLink, TabletSmartphone } from "lucide-react";
 import dynamic from "next/dynamic";
@@ -21,6 +17,7 @@ import { useTranslations } from "next-intl";
 import { FC, useCallback } from "react";
 
 import { Button } from "../../core/button/button";
+import { Typography } from "../../core/typography/typography";
 
 const IosInstructions = dynamic(() =>
   import("./components/ios-instructions/ios-instructions").then(
@@ -97,9 +94,9 @@ export const PWAInstallPrompt: FC<PWAInstallPromptProps> = props => {
           <DialogTitle>{t("install.title")}</DialogTitle>
 
           <DialogDescription>
-            <TextOneSecondary>
+            <Typography textColor="secondary">
               {t("install.description.default")}
-            </TextOneSecondary>
+            </Typography>
           </DialogDescription>
         </DialogHeader>
 
@@ -111,7 +108,7 @@ export const PWAInstallPrompt: FC<PWAInstallPromptProps> = props => {
           onClick={onDismiss}
         >
           <ExternalLink className="h-4 w-4" />
-          <TextTwoLine>{t("install.learnMore")}</TextTwoLine>
+          <Typography variant={"body"}>{t("install.learnMore")}</Typography>
         </Link>
 
         {renderFooter()}

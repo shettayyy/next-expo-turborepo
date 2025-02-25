@@ -6,11 +6,7 @@ import { DevicePlatforms } from "@edenomics/types/platforms";
 import { Back } from "@web/libs/components/app/back/back";
 import { VideoCard } from "@web/libs/components/app/video-card/video-card";
 import { Button } from "@web/libs/components/core/button/button";
-import {
-  H1,
-  TextOneSecondary,
-  TextTwoLine,
-} from "@web/libs/components/core/typography";
+import { Typography } from "@web/libs/components/core/typography/typography";
 import { MonitorDown, Smartphone } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { FC, useCallback, useEffect, useState } from "react";
@@ -171,10 +167,12 @@ export const AppInstallGuide: FC = () => {
       <Back className="mb-6" />
 
       <div className="mb-8">
-        <H1 className="mb-2">{t("installGuide.title")}</H1>
-        <TextOneSecondary className="block mb-6">
+        <Typography variant={"h1"} className="mb-2">
+          {t("installGuide.title")}
+        </Typography>
+        <Typography textColor={"secondary"} className="block mb-6">
           {t("installGuide.description")}
-        </TextOneSecondary>
+        </Typography>
 
         <div className="flex gap-2 overflow-x-auto pb-2">
           {platforms.map(platform => (
@@ -201,7 +199,7 @@ export const AppInstallGuide: FC = () => {
 
       {filteredGuides.length === 0 && (
         <div className="text-center py-12">
-          <TextTwoLine>{t("installGuide.noGuides")}</TextTwoLine>
+          <Typography variant={"body"}>{t("installGuide.noGuides")}</Typography>
         </div>
       )}
     </div>

@@ -1,6 +1,5 @@
+import { Typography } from "@web/libs/components/core/typography/typography";
 import { FC } from "react";
-
-import { TextTwoLine } from "../../core/typography";
 
 interface VideoCardProps {
   title: string;
@@ -17,7 +16,7 @@ export const VideoCard: FC<VideoCardProps> = ({ title, videoId }) => (
       />
     </div>
     <div className="p-4">
-      <TextTwoLine>{title}</TextTwoLine>
+      <Typography variant="body">{title}</Typography>
     </div>
   </div>
 );

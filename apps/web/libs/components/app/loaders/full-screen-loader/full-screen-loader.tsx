@@ -1,8 +1,5 @@
 "use client";
-import {
-  TextOneLine,
-  TextTwoSecondary,
-} from "@web/libs/components/core/typography";
+import { Typography } from "@web/libs/components/core/typography/typography";
 import { useTranslations } from "next-intl";
 import { useEffect, useMemo, useState } from "react";
 
@@ -31,8 +28,10 @@ export const FullScreenLoader = () => {
 
       {/* Quote Display */}
       <div className="max-w-md text-center flex flex-col items-center justify-center">
-        <TextOneLine className="text-xl font-medium mb-2">{quote}</TextOneLine>
-        <TextTwoSecondary className="text-sm">{t("loading")}</TextTwoSecondary>
+        <Typography className="text-xl font-medium mb-2">{quote}</Typography>
+        <Typography textColor={"secondary"} className="text-sm">
+          {t("loading")}
+        </Typography>
       </div>
     </div>
   );

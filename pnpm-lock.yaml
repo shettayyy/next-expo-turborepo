@@ -129,6 +129,9 @@ importers:
       '@edenomics/types':
         specifier: workspace:*
         version: link:../../packages/shared/types
+      '@edenomics/utils':
+        specifier: workspace:*
+        version: link:../../packages/shared/utils
       '@radix-ui/react-dialog':
         specifier: ^1.1.6
         version: 1.1.6(@types/react-dom@19.0.4)(@types/react@19.0.10)(react-dom@19.0.0)(react@19.0.0)
@@ -281,6 +284,21 @@ importers:
         version: 5.7.3
 
   packages/shared/types:
+    devDependencies:
+      '@edenomics-tools/eslint-config':
+        specifier: workspace:*
+        version: link:../../tools/eslint-config
+      '@edenomics-tools/typescript-config':
+        specifier: workspace:*
+        version: link:../../tools/typescript-config
+      eslint:
+        specifier: ^9.20.1
+        version: 9.20.1
+      typescript:
+        specifier: 5.7.3
+        version: 5.7.3
+
+  packages/shared/utils:
     devDependencies:
       '@edenomics-tools/eslint-config':
         specifier: workspace:*

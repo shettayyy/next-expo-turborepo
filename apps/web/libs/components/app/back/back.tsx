@@ -1,11 +1,12 @@
 "use client";
 import { Button } from "@web/libs/components/core/button/button";
-import { TextOneLine } from "@web/libs/components/core/typography";
 import { useNavigateBack } from "@web/libs/hooks/navigate-back/navigate-back";
 import { cn } from "@web/libs/utils/merge-class-names/merge-class-names";
 import { MoveLeft } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { FC } from "react";
+
+import { Typography } from "../../core/typography/typography";
 
 export interface BackProps {
   href?: string;
@@ -25,7 +26,7 @@ export const Back: FC<BackProps> = ({ href = "/", className = "" }) => {
     >
       <MoveLeft size={24} />
 
-      <TextOneLine>{tCommon("back")}</TextOneLine>
+      <Typography>{tCommon("back")}</Typography>
     </Button>
   );
 };

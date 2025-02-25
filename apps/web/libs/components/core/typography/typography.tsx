@@ -39,12 +39,18 @@ export interface TypographyProps
 }
 
 const Typography = React.forwardRef<HTMLElement, TypographyProps>(
-  ({ className, variant, as, asChild = false, ...props }, ref) => {
+  (
+    { className, variant, weight, textColor, as, asChild = false, ...props },
+    ref,
+  ) => {
     const Comp = asChild ? Slot : (as ?? getDefaultTextElement(variant));
 
     return (
       <Comp
-        className={cn(typographyVariants({ variant }), className)}
+        className={cn(
+          typographyVariants({ variant, weight, textColor }),
+          className,
+        )}
         ref={ref}
         {...props}
       />

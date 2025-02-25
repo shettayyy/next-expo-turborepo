@@ -1,4 +1,4 @@
-import { mergeClasses } from "@web/libs/utils/merge-classes/merge-classes";
+import { cn } from "@web/libs/utils/merge-class-names/merge-class-names";
 import { FC, ReactNode } from "react";
 
 import { TextThreeSubtitle } from "../typography";
@@ -31,7 +31,7 @@ export const LabeledIcon: FC<LabeledIconProps> = props => {
 
   return (
     <span
-      className={mergeClasses(
+      className={cn(
         containerStyles[direction],
         "items-center justify-center gap-1",
         containerClassName,
@@ -39,7 +39,7 @@ export const LabeledIcon: FC<LabeledIconProps> = props => {
     >
       {icon}
 
-      <TextThreeSubtitle className={mergeClasses(labelClassName)}>
+      <TextThreeSubtitle className={cn(labelClassName)}>
         {label}
       </TextThreeSubtitle>
     </span>

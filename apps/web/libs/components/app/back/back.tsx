@@ -2,7 +2,7 @@
 import { Button } from "@web/libs/components/core/button/button";
 import { TextOneLine } from "@web/libs/components/core/typography";
 import { useNavigateBack } from "@web/libs/hooks/navigate-back/navigate-back";
-import { mergeClasses } from "@web/libs/utils/merge-classes/merge-classes";
+import { cn } from "@web/libs/utils/merge-class-names/merge-class-names";
 import { MoveLeft } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { FC } from "react";
@@ -20,7 +20,7 @@ export const Back: FC<BackProps> = ({ href = "/", className = "" }) => {
     <Button
       variant="link"
       size="sm"
-      className={mergeClasses("justify-normal self-start pl-0", className)}
+      className={cn("justify-normal self-start pl-0", className)}
       onClick={goBack}
     >
       <MoveLeft size={24} />

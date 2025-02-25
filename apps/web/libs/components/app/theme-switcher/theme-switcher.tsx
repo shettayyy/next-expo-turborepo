@@ -1,7 +1,7 @@
 "use client";
 
 import { useHasMounted } from "@web/libs/hooks/has-mounted/has-mounted";
-import { mergeClasses } from "@web/libs/utils/merge-classes/merge-classes";
+import { cn } from "@web/libs/utils/merge-class-names/merge-class-names";
 import { Monitor, Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useCallback } from "react";
@@ -21,7 +21,7 @@ export default function ThemeSwitcher() {
       <button
         key={title}
         onClick={() => setTheme(value)}
-        className={mergeClasses(
+        className={cn(
           "rounded-md p-2 transition-colors hover:bg-accent hover:text-accent-foreground",
           {
             "bg-accent text-accent-foreground": theme === value,

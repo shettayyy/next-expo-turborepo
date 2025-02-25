@@ -4,6 +4,7 @@ import { useUserAgentPlatform } from "@edenomics/stores/user-agent";
 import { Browsers } from "@edenomics/types/browsers";
 import { DevicePlatforms } from "@edenomics/types/platforms";
 import { Back } from "@web/libs/components/app/back/back";
+import { VideoCard } from "@web/libs/components/app/video-card/video-card";
 import { Button } from "@web/libs/components/core/button/button";
 import {
   H1,
@@ -163,21 +164,6 @@ export const AppInstallGuide: FC = () => {
 
   const filteredGuides = guides.filter(
     guide => selectedPlatform === "all" || guide.platform === selectedPlatform,
-  );
-
-  const VideoCard: FC<IGuideVideo> = ({ title, videoId }) => (
-    <div className="rounded-lg overflow-hidden bg-zinc-900">
-      <div className="relative pb-[56.25%]">
-        <iframe
-          src={`https://www.youtube-nocookie.com/embed/${videoId}`}
-          className="absolute top-0 left-0 w-full h-full"
-          allowFullScreen
-        />
-      </div>
-      <div className="p-4">
-        <TextTwoLine>{title}</TextTwoLine>
-      </div>
-    </div>
   );
 
   return (

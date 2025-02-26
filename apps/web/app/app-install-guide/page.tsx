@@ -1,4 +1,4 @@
-import { APP_NAME } from "@edenomics/constants/app";
+import { APP_NAME } from "@shettayyy/constants/app";
 import { AppInstallGuide } from "@web/libs/screens/app-install-guide/app-install-guide";
 import { getMetaDescription } from "@web/libs/utils/metadata/metadata";
 import { Metadata } from "next";

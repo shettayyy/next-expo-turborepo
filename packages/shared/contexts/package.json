@@ -1,5 +1,5 @@
 {
-  "name": "@edenomics/contexts",
+  "name": "@shettayyy/contexts",
   "version": "1.0.0",
   "description": "Shared contexts used across the application",
   "type": "module",
@@ -11,17 +11,17 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
-    "@edenomics/stores": "workspace:*"
+    "@shettayyy/stores": "workspace:*"
   },
   "devDependencies": {
-    "@edenomics-tools/eslint-config": "workspace:*",
-    "@edenomics-tools/typescript-config": "workspace:*",
+    "@shettayyy-tools/eslint-config": "workspace:*",
+    "@shettayyy-tools/typescript-config": "workspace:*",
     "@types/react": "^19.0.10",
     "eslint": "^9.20.1",
     "typescript": "5.7.3"
   },
   "keywords": [
-    "edenomics",
+    "shettayyy",
     "contexts"
   ],
   "author": "Rahul Shetty",

@@ -6,7 +6,7 @@ export const Logo: FC<Pick<ImageProps, "className">> = props => {
   const { className } = props;
   return (
     <Image
-      src="/icons/logo/edenomics-icon.svg"
+      src="/icons/logo/shettayyy-icon.svg"
       alt="Logo"
       priority
       width={200}

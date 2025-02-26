@@ -1,8 +1,8 @@
 "use client";
 
-import { useUserAgentPlatform } from "@edenomics/stores/user-agent";
-import { Browsers } from "@edenomics/types/browsers";
-import { DevicePlatforms } from "@edenomics/types/platforms";
+import { useUserAgentPlatform } from "@shettayyy/stores/user-agent";
+import { Browsers } from "@shettayyy/types/browsers";
+import { DevicePlatforms } from "@shettayyy/types/platforms";
 import { Back } from "@web/libs/components/app/back/back";
 import { VideoCard } from "@web/libs/components/app/video-card/video-card";
 import { Button } from "@web/libs/components/core/button/button";

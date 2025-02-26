@@ -1,5 +1,5 @@
 {
-  "extends": "@edenomics-tools/typescript-config/base.json",
+  "extends": "@shettayyy-tools/typescript-config/base.json",
   "include": ["src"],
   "exclude": ["dist", "build", "node_modules"]
 }

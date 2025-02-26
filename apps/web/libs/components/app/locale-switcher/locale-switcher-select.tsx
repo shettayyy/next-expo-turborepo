@@ -1,6 +1,6 @@
 "use client";
 
-import { Locale } from "@edenomics/i18n/locales";
+import { Locale } from "@shettayyy/i18n/locales";
 import {
   Select,
   SelectContent,

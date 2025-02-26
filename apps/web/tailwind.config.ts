@@ -1,6 +1,6 @@
 // tailwind config is required for editor support
 
-import sharedConfig from "@edenomics-tools/tailwind-config";
+import sharedConfig from "@shettayyy-tools/tailwind-config";
 import type { Config } from "tailwindcss";
 import CSSAnimate from "tailwindcss-animate";
 

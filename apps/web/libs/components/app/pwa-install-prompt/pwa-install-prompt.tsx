@@ -1,6 +1,6 @@
 "use client";
 
-import { useUserAgentPlatform } from "@edenomics/stores/user-agent";
+import { useUserAgentPlatform } from "@shettayyy/stores/user-agent";
 import {
   Dialog,
   DialogContent,

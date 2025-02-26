@@ -153,7 +153,7 @@ const Sidebar = () => {
             <div className="min-w-[32px] w-8 h-8 flex items-center justify-center shrink-0">
               <Link className="flex items-center gap-2" href="/">
                 <Image
-                  src="/icons/logo/edenomics-icon.svg"
+                  src="/icons/logo/shettayyy-icon.svg"
                   alt="Logo"
                   width={32}
                   height={32}
@@ -188,7 +188,7 @@ const Sidebar = () => {
             <div className="min-w-[32px] w-8 h-8 flex items-center justify-center shrink-0">
               <Link className="flex items-center" href="/">
                 <Image
-                  src="/icons/logo/edenomics-icon.svg"
+                  src="/icons/logo/shettayyy-icon.svg"
                   alt="Logo"
                   width={32}
                   height={32}

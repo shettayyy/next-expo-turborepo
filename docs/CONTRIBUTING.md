@@ -1,6 +1,6 @@
-# Contributing to Edenomics
+# Contributing to shettayyy
 
-Welcome to the Edenomics monorepo! This guide will help you understand our development workflow and commit message conventions.
+Welcome to the shettayyy monorepo! This guide will help you understand our development workflow and commit message conventions.
 
 ## Commit Message Guidelines
 
@@ -116,7 +116,7 @@ Closes #123
 The repository contains both Next.js and Expo applications:
 
 ```bash
-edenomics/
+shettayyy/
 ├── apps/
 │   ├── web/          # Next.js application
 │   └── mobile/       # Expo application

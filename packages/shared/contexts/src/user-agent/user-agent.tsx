@@ -1,6 +1,6 @@
 "use client";
 
-import { useUserAgentActions } from "@edenomics/stores/user-agent";
+import { useUserAgentActions } from "@shettayyy/stores/user-agent";
 import { createContext, useCallback, useEffect } from "react";
 
 type Browser =

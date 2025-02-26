@@ -1,4 +1,4 @@
-import en from "@edenomics/i18n/en";
+import en from "@shettayyy/i18n/en";
 
 type Messages = typeof en;
 

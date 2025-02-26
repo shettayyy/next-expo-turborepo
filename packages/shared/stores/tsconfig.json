@@ -1,5 +1,5 @@
 {
-  "extends": "@edenomics-tools/typescript-config/react-library.json",
+  "extends": "@shettayyy-tools/typescript-config/react-library.json",
   "include": ["src"],
   "exclude": ["dist", "build", "node_modules"]
 }

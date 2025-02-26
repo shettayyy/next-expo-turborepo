@@ -1,2 +1,2 @@
 /** @type {import("eslint").Linter.Config} */
-export { nextJsConfig as default } from "@edenomics-tools/eslint-config/next-js";
+export { nextJsConfig as default } from "@shettayyy-tools/eslint-config/next-js";

@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Edenomics",
-    "slug": "edenomics",
+    "name": "Shettayyy",
+    "slug": "shettayyy",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -36,9 +36,9 @@
         "origin": false
       },
       "eas": {
-        "projectId": "2fdb2d31-912c-467c-bd21-0ffca10ddc92"
+        "projectId": "shettayyy"
       }
     },
-    "owner": "foundershq"
+    "owner": "shettayyy"
   }
 }

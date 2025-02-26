@@ -1,3 +1,3 @@
 /** @type {import("eslint").Linter.Config} */
 
-export { config as default } from "@edenomics-tools/eslint-config/base-ts";
+export { config as default } from "@shettayyy-tools/eslint-config/base-ts";

@@ -1,5 +1,5 @@
 "use client";
-import { useIsStandalone } from "@edenomics/stores/user-agent";
+import { useIsStandalone } from "@shettayyy/stores/user-agent";
 import { Button } from "@web/libs/components/core/button/button";
 import { TabletSmartphone } from "lucide-react";
 import dynamic from "next/dynamic";

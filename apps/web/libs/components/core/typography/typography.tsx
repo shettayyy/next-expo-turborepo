@@ -1,5 +1,5 @@
-import { getDefaultTextElement } from "@edenomics/utils/typography/html-element";
 import { Slot } from "@radix-ui/react-slot";
+import { getDefaultTextElement } from "@shettayyy/utils/typography/html-element";
 import { cn } from "@web/libs/utils/merge-class-names/merge-class-names";
 import { cva, type VariantProps } from "class-variance-authority";
 import * as React from "react";

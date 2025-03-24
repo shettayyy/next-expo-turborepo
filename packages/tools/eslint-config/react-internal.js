@@ -1,4 +1,5 @@
 import pluginReact from "eslint-plugin-react";
+// eslint-disable-next-line import-x/default
 import pluginReactHooks from "eslint-plugin-react-hooks";
 import globals from "globals";
 
@@ -30,6 +31,7 @@ export const config = [
       ...pluginReactHooks.configs.recommended.rules,
       // React scope no longer necessary with new JSX transform.
       "react/react-in-jsx-scope": "off",
+      "react-hooks/exhaustive-deps": "error",
     },
   },
 ];

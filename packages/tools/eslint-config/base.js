@@ -1,4 +1,5 @@
 import js from "@eslint/js";
+// eslint-disable-next-line import-x/default
 import eslintConfigPrettier from "eslint-config-prettier";
 import eslintPluginJsonc from "eslint-plugin-jsonc";
 import noSecrets from "eslint-plugin-no-secrets";
@@ -31,7 +32,10 @@ export const config = [
       "no-secrets": noSecrets,
     },
     rules: {
-      "no-secrets/no-secrets": "error",
+      "no-secrets/no-secrets": [
+        "error",
+        { ignoreContent: "NEXT_PUBLIC_*|NEXT_APP_*" },
+      ],
     },
   },
   {

@@ -205,3 +205,5 @@ export const AppInstallGuide: FC = () => {
     </div>
   );
 };
+
+AppInstallGuide.displayName = "AppInstallGuideScreen";

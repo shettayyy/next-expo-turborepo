@@ -48,10 +48,10 @@ export function UserAgentProvider({ children }: { children: React.ReactNode }) {
   /**
    * Updates the isStandalone property in the zustand store.
    *
-   * @param e The event that triggered the update
+   * @param e The browser event that triggered the update
    */
   const updateIsStandalone = useCallback(
-    (e: MediaQueryListEvent | MediaQueryList) => {
+    (e: MediaQueryListEvent) => {
       setIsStandalone(e.matches);
     },
     [setIsStandalone],

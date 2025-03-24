@@ -61,6 +61,10 @@ This Turborepo has some additional tools already setup for you:
 
 You would have refresh (CMD+R) whenever you make changes to the ESLint configuration.
 
+### Serwist
+
+Serwist is a service worker that caches the pages and assets in the production build. It is disabled in development mode as it doesn't support turbopack. To enable it, remove `disable` from `withSerwistInit` in `next.config.ts` and remove `--turbopack` from `next dev` command.
+
 ### TODO
 
 - TODO: Assign the markdown url to help with commit messages to `helpUrl` under `commitlint.config.js`

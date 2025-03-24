@@ -80,5 +80,146 @@
     "buttons": {
       "tryAgain": "Try Signing In Again"
     }
+  },
+  "PrivacyPolicyPage": {
+    "pageTitle": "Privacy Policy",
+    "lastUpdated": "Edenomics - Last updated: October 24, 2024",
+    "introduction": "Introduction",
+    "introText": "At Edenomics, we take your privacy and the security of your financial data extremely seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our personal finance management application.",
+    "informationWeCollect": "Information We Collect",
+    "personalInformation": "Personal Information",
+    "personalInfoList": {
+      "item1": "Name and contact information",
+      "item2": "Email address and authentication credentials",
+      "item3": "Financial account information (encrypted)",
+      "item4": "Transaction history and spending patterns",
+      "item5": "Budget and financial goals",
+      "item6": "Device information and usage data"
+    },
+    "howWeUse": "How We Use Your Information",
+    "weUseYourInfo": "We use your information to:",
+    "useInfoList": {
+      "item1": "Provide and maintain our financial management services",
+      "item2": "Generate spending analysis and budget recommendations",
+      "item3": "Improve and optimize our application",
+      "item4": "Communicate important updates and features",
+      "item5": "Ensure the security of your account"
+    },
+    "dataSecurity": "Data Security",
+    "securityList": {
+      "item1": "End-to-end encryption for all financial data",
+      "item2": "Regular security audits and penetration testing",
+      "item3": "Secure data storage using industry-standard protocols",
+      "item4": "Multi-factor authentication support"
+    },
+    "dataSharing": "Data Sharing",
+    "dataSharingText": "We do not sell, trade, or rent your personal information to third parties. We may share your information only in the following circumstances:",
+    "sharingList": {
+      "item1": "With your explicit consent",
+      "item2": "To comply with legal obligations",
+      "item3": "With service providers under strict confidentiality agreements",
+      "item4": "In case of a merger or acquisition (with prior notice)"
+    },
+    "yourRights": "Your Rights",
+    "youHaveRight": "You have the right to:",
+    "rightsList": {
+      "item1": "Access your personal data",
+      "item2": "Correct inaccurate data",
+      "item3": "Request data deletion",
+      "item4": "Export your data",
+      "item5": "Opt-out of data collection",
+      "item6": "Withdraw consent at any time"
+    },
+    "contactUs": "Contact Us",
+    "contactText": "If you have any questions about this Privacy Policy or our practices, please contact us at:",
+    "email": "Email:",
+    "footerText": "This privacy policy is subject to change. We will notify you of any material changes via email or through our application."
+  },
+  "TermsOfServicePage": {
+    "pageTitle": "Terms of Service",
+    "lastUpdated": "Edenomics - Last updated: October 24, 2024",
+    "sections": {
+      "acceptance": {
+        "title": "1. Acceptance of Terms",
+        "content": "By accessing or using Edenomics (\"App\"), you agree to bound by these Terms of Service. If you disagree with any part of these terms, you may not access or use our services. We reserve the right to modify these terms at any time, with notice provided through the App or via email."
+      },
+      "description": {
+        "title": "2. Service Description",
+        "intro": "Edenomics is a personal finance management application that provides:",
+        "features": {
+          "item1": "Expense tracking and categorization",
+          "item2": "Budget planning and management",
+          "item3": "Financial analysis and insights",
+          "item4": "Goal setting and tracking"
+        },
+        "disclaimer": "While we strive for accuracy, we do not guarantee the completeness, reliability, or accuracy of any financial information provided through the App."
+      },
+      "userResponsibilities": {
+        "title": "3. User Responsibilities and Account Security",
+        "accountSecurity": {
+          "title": "3.1 Account Security",
+          "items": {
+            "item1": "You are responsible for maintaining the confidentiality of your account credentials",
+            "item2": "You must immediately notify us of any unauthorized access or use",
+            "item3": "You are responsible for all activities under your account",
+            "item4": "You must use strong, unique passwords and enable two-factor authentication when available"
+          }
+        },
+        "prohibitedActivities": {
+          "title": "3.2 Prohibited Activities",
+          "items": {
+            "item1": "Attempting to bypass any security features",
+            "item2": "Using the App for any illegal purposes",
+            "item3": "Uploading malicious code or content",
+            "item4": "Attempting to access other user's accounts",
+            "item5": "Scraping or bulk downloading data"
+          }
+        }
+      },
+      "dataPrivacy": {
+        "title": "4. Data and Privacy",
+        "intro": "Your use of the App is also governed by our Privacy Policy. By using the App, you agree that:",
+        "items": {
+          "item1": "We may collect and process your financial data as described in our Privacy Policy",
+          "item2": "You grant us a license to use your data to provide and improve our services",
+          "item3": "You are responsible for the accuracy of data you provide",
+          "item4": "We may share anonymized, aggregated data for analytics purposes"
+        }
+      },
+      "liability": {
+        "title": "5. Liability and Disclaimers",
+        "disclaimer": "THE APP IS PROVIDED \"AS IS\" WITHOUT ANY WARRANTIES OF KIND.",
+        "items": {
+          "item1": "We are not responsible for financial losses resulting from use of the App",
+          "item2": "We do not provide financial advice - all insights are for informational purposes only",
+          "item3": "Our liability is limited to the amount paid for the service in the last 12 months",
+          "item4": "We are not liable for any indirect, incidental, or consequential damages"
+        }
+      },
+      "termination": {
+        "title": "6. Termination",
+        "intro": "We reserve the right to terminate or suspend access to our services:",
+        "items": {
+          "item1": "Without prior notice for violations of these terms",
+          "item2": "For suspicious or fraudulent activity",
+          "item3": "For extended periods of inactivity",
+          "item4": "If required by law or regulation"
+        }
+      },
+      "intellectualProperty": {
+        "title": "7. Intellectual Property",
+        "content": "All content, features, and functionality of the App, including but not limited to text, graphics, logos, icons, and software, are the exclusive property of Edenomics and protected by international copyright, trademark, and other intellectual property laws."
+      },
+      "governingLaw": {
+        "title": "8. Governing Law and Dispute Resolution",
+        "content": "These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in which Edenomics maintains its principal place of business, without regard to its conflict of law provisions. Any dispute arising from or relating to these Terms shall first be attempted to be resolved through informal negotiation. If the dispute cannot be resolved through negotiation within 30 days, both parties agree to resolve the dispute through arbitration in accordance with the UNCITRAL Arbitration Rules. The language of arbitration shall be English. Nothing in these Terms prevents us from seeking injunctive relief in any applicable jurisdiction where immediate relief is necessary to protect our interests."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "intro": "For any questions regarding these Terms of Service, please contact us at:",
+        "email": "Email:"
+      }
+    },
+    "footer": "By using Edenomics, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service."
   }
 }

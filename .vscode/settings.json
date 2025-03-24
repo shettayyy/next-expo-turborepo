@@ -1,9 +1,15 @@
 {
   "eslint.workingDirectories": [
-    { "pattern": "./packages/*/" },
     { "pattern": "./apps/*/" },
+    { "pattern": "./packages/*/" },
     { "pattern": "./packages/tools/*/" },
     { "pattern": "./packages/shared/*/" }
+  ],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
   ],
   "i18n-ally.localesPaths": ["packages/shared/i18n/src/translations"],
   "i18n-ally.enabledFrameworks": ["next-intl"],

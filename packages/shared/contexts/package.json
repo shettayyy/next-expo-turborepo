@@ -4,7 +4,7 @@
   "description": "Shared contexts used across the application",
   "type": "module",
   "exports": {
-    "./user-agent": "./src/user-agent/user-agent.ts"
+    "./user-agent": "./src/user-agent/user-agent.tsx"
   },
   "scripts": {
     "lint": "eslint src --max-warnings 0",
@@ -17,8 +17,8 @@
     "@shettayyy-tools/eslint-config": "workspace:*",
     "@shettayyy-tools/typescript-config": "workspace:*",
     "@types/react": "^19.0.10",
-    "eslint": "^9.20.1",
-    "typescript": "5.7.3"
+    "eslint": "^9.23.0",
+    "typescript": "5.8.2"
   },
   "keywords": [
     "shettayyy",

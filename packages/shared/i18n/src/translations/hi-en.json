@@ -80,5 +80,146 @@
     "buttons": {
       "tryAgain": "Phir se sign in karne ka prayas karein"
     }
+  },
+  "PrivacyPolicyPage": {
+    "pageTitle": "Gopniyata Neeti",
+    "lastUpdated": "Edenomics - Antim adyatan: 24 October, 2024",
+    "introduction": "Parichay",
+    "introText": "Edenomics mein, hum aapki gopniyata aur aapke vittiya data ki suraksha ko atyant gambhirta se lete hain. Yeh gopniyata neeti batati hai ki hum aapki vyaktigat vitt prabandhan application ka upyog karte samay aapki jankari ko kaise ekatr, upyog, prakat aur surakshit karte hain.",
+    "informationWeCollect": "Jo Jankari Hum Ekatr Karte Hain",
+    "personalInformation": "Vyaktigat Jankari",
+    "personalInfoList": {
+      "item1": "Naam aur sampark jankari",
+      "item2": "Email pata aur premanikaran credentials",
+      "item3": "Vittiya khata jankari (encrypted)",
+      "item4": "Len-den ka itihas aur kharch ke pattern",
+      "item5": "Budget aur vittiya lakshya",
+      "item6": "Device jankari aur upyog data"
+    },
+    "howWeUse": "Aapki Jankari Ka Upyog Kaise Karte Hain",
+    "weUseYourInfo": "Hum aapki jankari ka upyog karte hain:",
+    "useInfoList": {
+      "item1": "Hamari vittiya prabandhan sevaein pradan karne aur banaye rakhne ke liye",
+      "item2": "Kharch vishleshan aur budget sifarishein taiyar karne ke liye",
+      "item3": "Hamare application ko behtar banane aur anukoolit karne ke liye",
+      "item4": "Mahatvapurn update aur suvidhaon ke bare mein samvad karne ke liye",
+      "item5": "Aapke khate ki suraksha sunishchit karne ke liye"
+    },
+    "dataSecurity": "Data Suraksha",
+    "securityList": {
+      "item1": "Sabhi vittiya data ke liye end-to-end encryption",
+      "item2": "Niyamit suraksha audit aur penetration testing",
+      "item3": "Udyog-manak protocol ka upyog karke surakshit data bhandaran",
+      "item4": "Multi-factor premanikaran samarthan"
+    },
+    "dataSharing": "Data Sajhakarana",
+    "dataSharingText": "Hum aapki vyaktigat jankari ko teesre paksh ko nahi bechte, vyapar nahi karte ya kiraye par nahi dete hain. Hum aapki jankari keval nimnalikhit paristhitiyon mein sajha kar sakte hain:",
+    "sharingList": {
+      "item1": "Aapki spasht sahmati ke sath",
+      "item2": "Kanuni dayitvon ka palan karne ke liye",
+      "item3": "Kade gopniyata samjhauton ke tahat seva pradataon ke sath",
+      "item4": "Vilay ya adhigrahan ki sthiti mein (purv suchana ke sath)"
+    },
+    "yourRights": "Aapke Adhikar",
+    "youHaveRight": "Aapko adhikar hai:",
+    "rightsList": {
+      "item1": "Apni vyaktigat jankari tak pahunch",
+      "item2": "Galat data ko sahi karna",
+      "item3": "Data hatane ka anrodh",
+      "item4": "Apna data niryat karna",
+      "item5": "Data sangrah se opt-out karna",
+      "item6": "Kisi bhi samay sahmati vapas lena"
+    },
+    "contactUs": "Sampark Karen",
+    "contactText": "Yadi aapke pas is gopniyata neeti ya hamari prathaon ke bare mein koi prashn hain, to kripya hamse sampark karen:",
+    "email": "Email:",
+    "footerText": "Yeh gopniyata neeti parivartan ke adhin hai. Hum aapko kisi bhi mahatvapurn parivartan ke bare mein email ya hamare application ke madhyam se suchit karenge."
+  },
+  "TermsOfServicePage": {
+    "pageTitle": "Seva ki Shartein",
+    "lastUpdated": "Edenomics - Antim adyatan: 24 October, 2024",
+    "sections": {
+      "acceptance": {
+        "title": "1. Niyamon ki Swikriti",
+        "content": "Edenomics (\"App\") ka upyog karke, aap in seva sharton se bandhe hone ke liye sahmat hote hain. Yadi aap in sharton ke kisi bhi hisse se asahmat hain, to aap hamari sevaon ka upyog nahi kar sakte. Hum kisi bhi samay in niyamon ko sanshodhit karne ka adhikar surakshit rakhte hain, jiski suchna app ya email ke madhyam se di jayegi."
+      },
+      "description": {
+        "title": "2. Seva Vivaran",
+        "intro": "Edenomics ek vyaktigat vitt prabandhan application hai jo pradan karta hai:",
+        "features": {
+          "item1": "Kharch tracking aur vargikaran",
+          "item2": "Budget yojana aur prabandhan",
+          "item3": "Vittiya vishleshan aur antardrishti",
+          "item4": "Lakshya nirdharan aur tracking"
+        },
+        "disclaimer": "Hum satikta ka prayas karte hain, lekin app ke madhyam se pradan ki gayi kisi bhi vittiya jankari ki purnata, vishwasniyata ya satikta ki guarantee nahi dete hain."
+      },
+      "userResponsibilities": {
+        "title": "3. Upyogkarta ki Zimmedariyan aur Khata Suraksha",
+        "accountSecurity": {
+          "title": "3.1 Khata Suraksha",
+          "items": {
+            "item1": "Aap apne khate ke credentials ki gopniyata banaye rakhne ke liye zimmedar hain",
+            "item2": "Kisi bhi anadhikrit pahunch ya upyog ki turant suchna deni hogi",
+            "item3": "Aap apne khate ke tahat sabhi gatividhiyon ke liye zimmedar hain",
+            "item4": "Aapko mazboot, adwitiya password ka upyog karna chahiye aur jab uplabdh ho to do-karak premanikaran saksham karna chahiye"
+          }
+        },
+        "prohibitedActivities": {
+          "title": "3.2 Pratibandhit Gatividhiyan",
+          "items": {
+            "item1": "Kisi bhi suraksha suvidhaon ko bypass karne ka prayas",
+            "item2": "App ka upyog kisi bhi avaidh uddeshya ke liye karna",
+            "item3": "Durbhavnapurn code ya samagri upload karna",
+            "item4": "Anya upyogkartaon ke khaton tak pahunchne ka prayas karna",
+            "item5": "Data scraping ya bulk downloading"
+          }
+        }
+      },
+      "dataPrivacy": {
+        "title": "4. Data aur Gopniyata",
+        "intro": "App ka aapka upyog hamari gopniyata niti dwara bhi niyantrit hota hai. App ka upyog karke, aap sahmat hote hain ki:",
+        "items": {
+          "item1": "Hum aapke vittiya data ko hamari gopniyata niti mein varnit anusar ekatr aur sansadhit kar sakte hain",
+          "item2": "Aap hume apni sevaein pradan karne aur sudhar karne ke liye apne data ka upyog karne ka license pradan karte hain",
+          "item3": "Aap pradan kiye gaye data ki satikta ke liye zimmedar hain",
+          "item4": "Hum vishleshan uddeshyon ke liye anam, ekatrit data sajha kar sakte hain"
+        }
+      },
+      "liability": {
+        "title": "5. Dayitv aur Asvikaran",
+        "disclaimer": "App \"jaisa hai\" pradan kiya jata hai bina kisi prakar ki warranty ke.",
+        "items": {
+          "item1": "Hum app ke upyog se hone wale vittiya nuksan ke liye zimmedar nahi hain",
+          "item2": "Hum vittiya salah nahi dete - sabhi antardrashtiyan keval suchnatmak uddeshyon ke liye hain",
+          "item3": "Hamara dayitv pichle 12 mahinon mein seva ke liye bhugtan ki gayi rashi tak simit hai",
+          "item4": "Hum kisi bhi apratyaksh, akasmik ya parinami nuksan ke liye zimmedar nahi hain"
+        }
+      },
+      "termination": {
+        "title": "6. Samapti",
+        "intro": "Hum apni sevaon tak pahunch ko samapt ya nilambit karne ka adhikar surakshit rakhte hain:",
+        "items": {
+          "item1": "In sharton ke ullanghan ke liye bina purv suchna ke",
+          "item2": "Sandigdh ya dhokhadhadi wali gatividhi ke liye",
+          "item3": "Niskriyata ki vistarit avadhi ke liye",
+          "item4": "Yadi kanun ya niyaman dwara avashyak ho"
+        }
+      },
+      "intellectualProperty": {
+        "title": "7. Bauddhik Sampada",
+        "content": "App ki sabhi samagri, suvidhaein aur karyakshamta, jismein path, graphics, logo, icon aur software shamil hain lekin inhi tak simit nahi hain, Edenomics ki vishesh sampatti hain aur antarrashtriya copyright, trademark aur anya bauddhik sampada kanunon dwara sanrakshit hain."
+      },
+      "governingLaw": {
+        "title": "8. Shasi Kanun aur Vivad Samadhan",
+        "content": "Ye shartein us kshetradhikar ke kanunon ke anusar niyantrit aur vyakhya ki jayengi jahan Edenomics apna mukhya vyavsay sthan banaye rakhta hai, iske kanun ke takrav ke pravdhanon ki parvah kiye bina. In sharton se utpann ya sambandhit kisi bhi vivad ko pehle anaupcharik varta ke madhyam se hal karne ka prayas kiya jayega. Yadi vivad 30 dinon ke bhitar varta ke madhyam se hal nahi kiya ja sakta hai, to dono paksh UNCITRAL madhyasthata niyamon ke anusar madhyasthata ke madhyam se vivad ko hal karne ke liye sahmat hain. Madhyasthata ki bhasha angrezi hogi. In sharton mein kuchh bhi humein kisi bhi lagu kshetradhikar mein nishedhagya rahat mangne se nahi rokta hai jahan hamare hiton ki raksha ke liye tatkal rahat avashyak hai."
+      },
+      "contact": {
+        "title": "Sampark Karen",
+        "intro": "In seva ki sharton ke bare mein kisi bhi prashn ke liye, kripya hamse sampark karen:",
+        "email": "Email:"
+      }
+    },
+    "footer": "Edenomics ka upyog karke, aap svikar karte hain ki aapne in seva ki sharton ko padh liya hai, samajh liya hai aur inse bandhe hone ke liye sahmat hain."
   }
 }

@@ -21,3 +21,15 @@
     --radius: 0.5rem;
   }
 }
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  .app-container {
+    @apply container mx-auto min-h-[100dvh] flex flex-col relative;
+  }
+}

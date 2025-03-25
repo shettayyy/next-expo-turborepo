@@ -6,7 +6,7 @@
     "esModuleInterop": true,
     "incremental": false,
     "isolatedModules": true,
-    "lib": ["es2022", "DOM", "DOM.Iterable"],
+    "lib": ["es2022", "DOM", "DOM.Iterable", "WebWorker"],
     "module": "NodeNext",
     "moduleDetection": "force",
     "moduleResolution": "NodeNext",
@@ -15,6 +15,7 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "ES2022",
-    "noUnusedLocals": true
+    "noUnusedLocals": true,
+    "noImplicitAny": true
   }
 }

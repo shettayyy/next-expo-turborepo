@@ -1,2 +1,8 @@
+import path from "node:path";
+
+import { getNextJsConfig } from "@shettayyy-tools/eslint-config/next-js";
+
+const projectPath = path.resolve(import.meta.dirname, "tsconfig.json");
+
 /** @type {import("eslint").Linter.Config} */
-export { nextJsConfig as default } from "@shettayyy-tools/eslint-config/next-js";
+export default getNextJsConfig(projectPath);

@@ -9,8 +9,7 @@
     "paths": {
       "@web/libs/*": ["./libs/*"]
     },
-    "types": ["@serwist/next/typings"],
-    "lib": ["WebWorker"]
+    "types": ["@serwist/next/typings"]
   },
   "include": [
     "**/*.ts",

@@ -1,37 +1,42 @@
 import pluginReact from "eslint-plugin-react";
-// eslint-disable-next-line import-x/default
 import pluginReactHooks from "eslint-plugin-react-hooks";
 import globals from "globals";
 
-import { config as baseConfig } from "./base-ts.js";
+import { getBaseTypeScriptConfig } from "./base-ts.js";
 
 /**
- * A custom ESLint configuration for libraries that use React.
+ * Creates a React-based ESLint configuration
  *
- * @type {import("eslint").Linter.Config} */
-export const config = [
-  ...baseConfig,
-  pluginReact.configs.flat.recommended,
-  {
-    languageOptions: {
-      ...pluginReact.configs.flat.recommended.languageOptions,
-      globals: {
-        ...globals.serviceworker,
-        ...globals.browser,
-        ...globals.jest,
+ * @param {string|string[]} tsconfigPath - Path(s) to tsconfig.json
+ * @returns {import("eslint").Linter.Config[]}
+ */
+export function getReactConfig(tsconfigPath) {
+  const baseConfig = getBaseTypeScriptConfig(tsconfigPath);
+
+  return [
+    ...baseConfig,
+    pluginReact.configs.flat.recommended,
+    {
+      languageOptions: {
+        ...pluginReact.configs.flat.recommended.languageOptions,
+        globals: {
+          ...globals.serviceworker,
+          ...globals.browser,
+          ...globals.jest,
+        },
       },
     },
-  },
-  {
-    plugins: {
-      "react-hooks": pluginReactHooks,
+    {
+      plugins: {
+        "react-hooks": pluginReactHooks,
+      },
+      settings: { react: { version: "detect" } },
+      rules: {
+        ...pluginReactHooks.configs.recommended.rules,
+        // React scope no longer necessary with new JSX transform.
+        "react/react-in-jsx-scope": "off",
+        "react-hooks/exhaustive-deps": "error",
+      },
     },
-    settings: { react: { version: "detect" } },
-    rules: {
-      ...pluginReactHooks.configs.recommended.rules,
-      // React scope no longer necessary with new JSX transform.
-      "react/react-in-jsx-scope": "off",
-      "react-hooks/exhaustive-deps": "error",
-    },
-  },
-];
+  ];
+}

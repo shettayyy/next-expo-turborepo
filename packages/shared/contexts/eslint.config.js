@@ -1,3 +1,9 @@
-/** @type {import("eslint").Linter.Config} */
+import path from "node:path";
 
-export { config as default } from "@shettayyy-tools/eslint-config/react-internal";
+import { getReactConfig } from "@shettayyy-tools/eslint-config/react-internal";
+
+// Get the directory name in ESM
+const projectPath = path.resolve(import.meta.dirname, "tsconfig.json");
+
+/** @type {import("eslint").Linter.Config} */
+export default getReactConfig(projectPath);

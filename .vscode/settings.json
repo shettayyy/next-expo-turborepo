@@ -1,21 +1,19 @@
 {
-  "eslint.workingDirectories": [
-    { "pattern": "./apps/*/" },
-    { "pattern": "./packages/*/" },
-    { "pattern": "./packages/tools/*/" },
-    { "pattern": "./packages/shared/*/" }
-  ],
   "eslint.validate": [
     "javascript",
     "javascriptreact",
     "typescript",
     "typescriptreact"
   ],
+  "eslint.workingDirectories": [{ "mode": "auto" }],
   "i18n-ally.localesPaths": ["packages/shared/i18n/src/translations"],
   "i18n-ally.enabledFrameworks": ["next-intl"],
   "i18n-ally.sortKeys": true,
   "i18n-ally.keepFulfilled": true,
   "i18n-ally.keystyle": "nested",
   "i18n-ally.sourceLanguage": "en",
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "eslint.runtime": "/Users/shettayyy/.nvm/versions/node/v22.14.0/bin/node",
+  "eslint.useESLintClass": true,
+  "eslint.useFlatConfig": true
 }

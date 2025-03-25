@@ -1,2 +1,8 @@
 /** @type {import("eslint").Linter.Config} */
-export { expoConfig as default } from "@shettayyy-tools/eslint-config/expo";
+import path from "node:path";
+
+import { getExpoConfig } from "@shettayyy-tools/eslint-config/expo";
+
+const projectPath = path.resolve(import.meta.dirname, "tsconfig.json");
+
+export default getExpoConfig(projectPath);

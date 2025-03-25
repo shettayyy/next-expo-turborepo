@@ -6,7 +6,7 @@ import eslintPluginUnicorn from "eslint-plugin-unicorn";
  * @type {import("eslint").Linter.Config}
  * */
 export const unicornConfig = [
-  eslintPluginUnicorn.configs["flat/recommended"],
+  eslintPluginUnicorn.configs["recommended"],
   {
     rules: {
       "unicorn/no-unused-properties": "error",

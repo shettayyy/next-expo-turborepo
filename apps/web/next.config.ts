@@ -37,6 +37,23 @@ const nextConfig: NextConfig = {
           "wss://localhost:*",
         ];
 
+    // Create a type-safe connect-src string
+    const connectSrcString = connectSrc.join(" ");
+
+    // Create a type-safe script-src string
+    const scriptSrcValue = isProduction ? "'self'" : "'self' 'unsafe-eval'";
+
+    // Create the CSP value in a type-safe way
+    const cspValue = [
+      "default-src 'self'",
+      `script-src ${scriptSrcValue}`,
+      `connect-src ${connectSrcString}`,
+      "worker-src 'self'",
+      "frame-ancestors 'none'",
+      "base-uri 'self'",
+      "form-action 'self'",
+    ].join("; ");
+
     return [
       // {
       //   source: "/:path*",
@@ -55,17 +72,7 @@ const nextConfig: NextConfig = {
           },
           {
             key: "Content-Security-Policy",
-            value: `
-              default-src 'self'; 
-              script-src 'self' ${isProduction ? "" : `'unsafe-eval'`};
-              connect-src ${connectSrc.join(" ")};
-              worker-src 'self';
-              frame-ancestors 'none';
-              base-uri 'self';
-              form-action 'self';
-            `
-              .replaceAll(/\s+/g, " ")
-              .trim(),
+            value: cspValue,
           },
         ],
       },

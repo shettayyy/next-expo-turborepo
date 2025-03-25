@@ -1,25 +1,26 @@
-import js from "@eslint/js";
 import pluginNext from "@next/eslint-plugin-next";
 
-import { config as baseConfig } from "./base-ts.js";
-import { config as reactInternalConfig } from "./react-internal.js";
+import { getReactConfig } from "./react-internal.js";
 
 /**
- * A custom ESLint configuration for libraries that use Next.js.
+ * Creates a Next.js-based ESLint configuration
  *
- * @type {import("eslint").Linter.Config}
- * */
-export const nextJsConfig = [
-  ...baseConfig,
-  js.configs.recommended,
-  ...reactInternalConfig,
-  {
-    plugins: {
-      "@next/next": pluginNext,
+ * @param {string|string[]} tsconfigPath - Path(s) to tsconfig.json
+ * @returns {import("eslint").Linter.Config[]}
+ */
+export function getNextJsConfig(tsconfigPath) {
+  const reactInternalConfig = getReactConfig(tsconfigPath);
+
+  return [
+    ...reactInternalConfig,
+    {
+      plugins: {
+        "@next/next": pluginNext,
+      },
+      rules: {
+        ...pluginNext.configs.recommended.rules,
+        ...pluginNext.configs["core-web-vitals"].rules,
+      },
     },
-    rules: {
-      ...pluginNext.configs.recommended.rules,
-      ...pluginNext.configs["core-web-vitals"].rules,
-    },
-  },
-];
+  ];
+}

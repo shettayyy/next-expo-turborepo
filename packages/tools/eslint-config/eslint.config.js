@@ -3,4 +3,18 @@
  *
  * @type {import("eslint").Linter.Config}
  * */
-export { config as default } from "./base-ts.js";
+import globals from "globals";
+import { config as baseConfig } from "./base.js";
+
+const config = [
+  ...baseConfig,
+  {
+    languageOptions: {
+      globals: {
+        ...globals.node,
+      },
+    },
+  },
+];
+
+export default config;

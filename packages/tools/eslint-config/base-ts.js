@@ -1,10 +1,16 @@
 import { config as baseConfig } from "./base.js";
-import { importConfig } from "./rules/import.js";
-import { typescriptConfig } from "./rules/typescript.js";
+import { getImportConfig } from "./rules/import.js";
+import { getTypescriptConfig } from "./rules/typescript.js";
 
 /**
- * A shared ESLint configuration for the repository.
+ * Creates a TypeScript-based ESLint configuration
  *
- * @type {import("eslint").Linter.Config}
- * */
-export const config = [...baseConfig, ...typescriptConfig, ...importConfig];
+ * @param {string|string[]} tsconfigPath - Path(s) to tsconfig.json
+ * @returns {import("eslint").Linter.Config[]}
+ */
+export function getBaseTypeScriptConfig(tsconfigPath) {
+  const typescriptConfig = getTypescriptConfig(tsconfigPath);
+  const importConfig = getImportConfig(tsconfigPath);
+
+  return [...baseConfig, ...typescriptConfig, ...importConfig];
+}

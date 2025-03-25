@@ -11,6 +11,7 @@ import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import { useEffect } from "react";
 
+import SpaceMono from "@/assets/fonts/SpaceMono-Regular.ttf";
 import { useColorScheme } from "@/components/use-color-scheme";
 
 export {
@@ -41,8 +42,7 @@ function RootLayoutNav() {
 
 export default function RootLayout() {
   const [hasLoaded, error] = useFonts({
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment , @typescript-eslint/no-require-imports, unicorn/prefer-module
-    spaceMono: require("../assets/fonts/SpaceMono-Regular.ttf"),
+    spaceMono: SpaceMono,
     ...FontAwesome.font,
   });
 

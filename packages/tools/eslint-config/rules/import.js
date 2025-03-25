@@ -1,33 +1,47 @@
 import eslintPluginImportX from "eslint-plugin-import-x";
+import { createTypeScriptImportResolver } from "eslint-import-resolver-typescript";
 import simpleImportSort from "eslint-plugin-simple-import-sort";
 
 /**
- * Configuration for the simple-import-sort plugin.
+ * Creates TypeScript ESLint configuration with the correct project path
  *
- * @type {import("eslint").Linter.Config}
- * */
-export const importConfig = [
-  eslintPluginImportX.flatConfigs.recommended,
-  eslintPluginImportX.flatConfigs.typescript,
-  {
-    rules: {
-      "sort-imports": "off", // Superseded by simple-import-sort
-      "import-x/order": "off", // Superseded by simple-import-sort
+ * @param {string|string[]} [tsconfigPath] - The path to the tsconfig, relative to the consuming project
+ * @returns {import("eslint").Linter.Config[]}
+ */
+export const getImportConfig = tsconfigPath => {
+  return [
+    eslintPluginImportX.flatConfigs.recommended,
+    eslintPluginImportX.flatConfigs.typescript,
+    {
+      settings: {
+        "import-x/resolver-next": [
+          createTypeScriptImportResolver({
+            alwaysTryTypes: true,
+            project: tsconfigPath,
+          }),
+        ],
+      },
+    },
+    {
+      rules: {
+        "sort-imports": "off", // Superseded by simple-import-sort
+        "import-x/order": "off", // Superseded by simple-import-sort
 
-      "import-x/first": "error",
-      "import-x/newline-after-import": "error",
-      "import-x/no-duplicates": "error",
-      "import-x/no-extraneous-dependencies": "error",
-      "import-x/no-anonymous-default-export": "error",
+        "import-x/first": "error",
+        "import-x/newline-after-import": "error",
+        "import-x/no-duplicates": "error",
+        "import-x/no-extraneous-dependencies": "error",
+        "import-x/no-anonymous-default-export": "error",
+      },
     },
-  },
-  {
-    plugins: {
-      "simple-import-sort": simpleImportSort,
+    {
+      plugins: {
+        "simple-import-sort": simpleImportSort,
+      },
+      rules: {
+        "simple-import-sort/imports": "error",
+        "simple-import-sort/exports": "error",
+      },
     },
-    rules: {
-      "simple-import-sort/imports": "error",
-      "simple-import-sort/exports": "error",
-    },
-  },
-];
+  ];
+};
